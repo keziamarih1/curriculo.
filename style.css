@@ -1,0 +1,13 @@
+body{
+background-image: url(./imagens/bg-desktop-light.jpg);
+background-repeat: no-repeat;
+background-position: top center;
+background-size: cover;
+ }
+
+ #caixa {
+    border: 1px solid red;
+    width: 320px;
+    height: 712px;
+    margin: auto;
+}
