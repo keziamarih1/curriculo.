@@ -1,0 +1,86 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fefefe;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+  }
+  
+  h1, h2 {
+    color: #b16aa3;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+  .info-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .info-list li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #b16aa3;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact {
+    margin-top: 30px;
+  }
+    body {
+    margin: 0;
+    padding: 0;
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color:#ffffff
+    }
+
+    .perfil {
+      display: flex;
+     width: 260px;
+     padding: 20px;
+     text-align: center;
+     background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 80%;
+    }
+
+    img {
+      display: flex;
+      height: 300px;
+      margin: auto;
+    }
+
+    #caixa {
+   width: 360px;
+   height: 712px;
+   margin-left: auto;
+   margin-right: auto;
+    }
+
+    
+
+
+
+  
+    
