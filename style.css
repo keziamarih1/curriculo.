@@ -5,14 +5,22 @@
 }
 
 
-:root{
+:root {
   --text-color: white;
- --big-ur: url(./imagens/bg-desktop.jpg);
+  --bg-url: url("./imagens/bg-desktop.jpg");
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(255, 255, 255, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
 }
 
-.light{
- --text-color: black;
- --big-url: url(./imagens/bg-desktop-light.jpg);
+.light {
+  --text-color: black;
+  --bg-url: url("./imagens/bg-desktop-light.jpg");
+  --stroke-color: rgba(0, 0, 0, 0.5);
+ --surface-color: rgba(0, 0, 0, 0.05);
+ --surface-color-hover: rgba(0, 0, 0, 0.02);
+ --highlight-color: rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -24,7 +32,7 @@ body {
 
 
 body * {
-  color: var(--text-color)
+  color: var(--text-color);
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -57,42 +65,51 @@ body * {
   font-size: 18;
   margin-top: 8px;
 }
+ #switch button {
+  width: 32px;
+  height: 32px;
+  background: white;
+  background-image: url(./imagens/sun.svg);
+  background-repeat: no-repeat;
+ }
 
 ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 16px;
- padding: 24px 0;
+  padding: 24px 0;
 
 }
+
 ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px 24px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--surface-color);
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--stroke-color);
+  text-decoration: none;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  
+
   transition: background 0.5s;
-  
+
 
 }
 
 ul li a:hover {
-   background: rgba(255, 255, 255, 0.05);
-   border: 1.5px var(--text-color)
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
 }
 
-#icones{
- display: flex;
- justify-content: center;
- gap: 32px;
- font-size: 24px;
- padding: 24px 0;
+#icones {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  font-size: 24px;
+  padding: 24px 0;
 
 }
 
@@ -106,14 +123,14 @@ ul li a:hover {
 }
 
 #icones a:hover {
- background: rgba(255, 255, 255, 0.2)
- padding: 16px;
+  background: var(--highlight-color);
+  padding: 16px;
 
 }
 
 footer {
- padding: 24px;
- text-align: center;
- font-size: 14px;
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
 
 }
